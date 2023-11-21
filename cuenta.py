@@ -13,4 +13,25 @@ class Cuenta:
         self.saldo += valor
         
     def retirar(self, valor):
-        self.saldo -= valor
+        if valor > self.saldo:
+            print("No cuenta con esa cantidad disponible para retirar")
+        else:
+            self.saldo -= valor
+    
+    def transferir(self, valor, destino):
+        self.retirar;
+        destino.depositar;
+       
+    def get_saldo(self):
+        return self.saldo;
+    
+    def get_titular(self):
+        return self.titular
+    
+    @property
+    def limite(self):
+        return self.limite;
+    
+    @limite.setter
+    def limite(self, limite):
+        self.limite = limite
